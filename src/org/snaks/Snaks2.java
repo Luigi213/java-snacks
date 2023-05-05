@@ -13,8 +13,8 @@ public class Snaks2 {
 		int x = 0;
 		
 		while(name.length > x) {			
-			int rdmN = rand.nextInt(3);
-			int rdmS = rand.nextInt(3);
+			int rdmN = rand.nextInt(name.length);
+			int rdmS = rand.nextInt(surname.length);
 			System.out.println(name[rdmN] + " " + surname[rdmS]);
 			x++;
 		}
