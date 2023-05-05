@@ -8,15 +8,18 @@ public class Snaks8 {
 		
 		Random rand = new Random();
 		
+		int countP = 0;
+		int countD = 0;
+		
 		Integer[] arrP = new Integer[10];
 		Integer[] arrD = new Integer[10];
 		
 		for(int i=0;i<10; i++) {
 			int rdm = rand.nextInt(100);
 			if(rdm % 2 == 0) {
-				arrP[i] = rdm;
+				arrP[countP++] = rdm;
 			} else {
-				arrD[i] = rdm;
+				arrD[countD++] = rdm;
 			}
 		}
 		

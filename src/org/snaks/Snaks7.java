@@ -8,8 +8,8 @@ public class Snaks7 {
 		Random rand = new Random();
 		
 		int i = 1;
-		while(i % 3 != 0 && i % 5 != 0) {			
-			i = rand.nextInt(100);
+		while(i % 3 != 0 || i % 5 != 0) {	
+			i = rand.nextInt(101);
 		}
 		System.out.println(i);
 		

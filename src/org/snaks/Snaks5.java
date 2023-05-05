@@ -23,8 +23,6 @@ public class Snaks5 {
 			
 			int rdm = rand.nextInt(101);
 			
-			System.out.println(rdm);
-			
 			sum += rdm;
 
 			if(rdm % 2 == 0) {
@@ -33,10 +31,11 @@ public class Snaks5 {
 				countD++;
 				sumD += rdm;
 			}
-			
+
 			if(rdm < min) {
 				min = rdm;
 			}
+			
 			
 			if(rdm > max) {
 				max = rdm;
