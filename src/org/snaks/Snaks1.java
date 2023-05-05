@@ -11,8 +11,8 @@ public class Snaks1 {
 		
 		System.out.println(
 					num % 2 == 0
-					? num + 1
-					: num
+					? num
+					: num + 1
 				);
 		
 		in.close();
