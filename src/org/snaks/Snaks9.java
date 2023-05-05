@@ -19,7 +19,6 @@ public class Snaks9 {
 		int per = (2 * b) + (2 * h);
 		System.out.println("Perimetro triangolo: " + per);
 		
-		
 		in.close();
 	}
 }
