@@ -21,7 +21,7 @@ public class Snaks8 {
 		}
 		
 		System.out.println("Pari: " + Arrays.asList(arrP));
-		System.out.println("Pari: " + Arrays.asList(arrD));
+		System.out.println("Dispari: " + Arrays.asList(arrD));
 		
 	}
 }
