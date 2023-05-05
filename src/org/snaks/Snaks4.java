@@ -19,7 +19,7 @@ public class Snaks4 {
 	    	System.out.println("E' palindroma");  	    	
 	    }
 	    else  {
-	    	System.out.println("None e' palindroma");   	    	
+	    	System.out.println("Non e' palindroma");   	    	
 	    }
 	    
 	    in.close();
