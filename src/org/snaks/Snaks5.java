@@ -14,19 +14,35 @@ public class Snaks5 {
 		
 		int sum = 0;
 		int sumP = 0;
+		int countD = 0;
 		int sumD = 0;
+		
+		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;
 		for (int i=0; i<guestNum; i++) {
 			
-			int rdm = rand.nextInt(100);
+			int rdm = rand.nextInt(101);
+			
+			System.out.println(rdm);
 			
 			sum += rdm;
 
 			if(rdm % 2 == 0) {
 				sumP += rdm;
 			} else {
+				countD++;
 				sumD += rdm;
 			}
+			
+			if(rdm < min) {
+				min = rdm;
+			}
+			
+			if(rdm > max) {
+				max = rdm;
+			}
 		}
+		
 		
 		System.out.println("Sommatoria tutti valori:" + sum);
 		System.out.println("Sommatoria tutti i numeri pari:" + sumP);
@@ -34,10 +50,13 @@ public class Snaks5 {
 		double media = sum / guestNum;
 		System.out.println("Media di tutti i valori:" + media);
 		
-		double mediaD = sumD / guestNum;
-		System.out.println("Media di tutti i valori dispari:" + mediaD);
-		System.out.println("Minimo di valori: " + 0);
-		System.out.println("Massimo di valori: " + guestNum);
+		if(countD > 0) {
+			double mediaD = sumD / countD;
+			System.out.println("Media di tutti i valori dispari:" + mediaD);
+			
+		}
+		System.out.println("Minimo di valori: " + min);
+		System.out.println("Massimo di valori: " + max);
 		in.close();
 	}
 }
